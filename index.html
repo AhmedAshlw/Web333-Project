@@ -1,0 +1,437 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- All CSS -->
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
+    <link href="./css/style.css" rel="stylesheet">
+    <script defer src="./js/script.js"></script>
+    <title>DHorntail</title>
+    <link rel="icon" href="./img/dragon.png">
+</head>
+<body>
+    <div class="A">
+        <header class="AB">
+            <div class="LT">
+                <span class="name">DHorntail</span>
+            </div>
+            <div class="L">
+                <div class="box">
+                    <input type="checkbox" id="check">
+                    <div class="search-box1">
+                        <form method="get">
+                            <input type="text" placeholder="Search in DHorntail library" />
+                            <label for="check" class="icon">
+                                <i class='bx bx-search icon'></i>
+                            </label>
+                        </form>
+                    </div>
+                </div>
+                <div class="bt">
+                    <button class="Create" data-bs-toggle="modal" data-bs-target="#myModal">
+                        <p><a href="#"><span class="text nav-text">Create</span></a></p>
+                    </button>
+                    <div class="modal fade" id="myModal">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title">Quiz Settings</h5>
+                              <button class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="container col-md-5">
+                                        <div class="mb-4">
+                                            <label for="Image" class="form-label">Add a Cover Image</label>
+                                            <input class="form-control" type="file" id="formFile" onchange="preview()">
+                                            <button onclick="clearImage()" class="btn btn-primary mt-3">Choose Another</button>
+                                        </div>
+                                        <img id="frame" src="" class="img-fluid" />
+                                    </div>
+                                    <div class="mb-3">
+                                      <label for="recipient-name" class="col-form-label">Name</label>
+                                      <input type="text" class="form-control" id="recipient-name">
+                                    </div>
+                                    <div class="input-group mb-3">
+                                        <label class="input-group-text" for="inputGroup">Category</label>
+                                        <select class="form-select" id="inputGroup">
+                                          <option selected>Choose...</option>
+                                          <option value="1">Math</option>
+                                          <option value="2">English</option>
+                                          <option value="3">Science</option>
+                                          <option value="4">Computers</option>
+                                          <option value="5">Sports</option>
+                                          <option value="6">Health</option>
+                                          <option value="7">Languages</option>
+                                          <option value="8">History</option>
+                                          <option value="9">Other</option>
+                                        </select>
+                                    </div>
+                                  </form>
+                            </div>
+                            <div class="modal-footer">
+                              <button class="btn btn-danger" data-bs-dismiss="modal">Cancel</button>
+                              <a class="btn btn-primary" href="Create Quiz/CQuiz.html" role="button">Create</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                <div class="bt">
+                    <button class="Login">
+                        <p><a href="#"><span class="text nav-text">Login</span></a></p>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+     <div class="carousel slide" data-bs-ride="carousel" id="carouselExampleIndicators">
+         <div class="carousel-indicators">
+             <button aria-label="Slide 1" class="active" data-bs-slide-to="0" data-bs-target="#carouselExampleIndicators" type="button"></button> <button aria-label="Slide 2" data-bs-slide-to="1" data-bs-target="#carouselExampleIndicators" type="button"></button> <button aria-label="Slide 3" data-bs-slide-to="2" data-bs-target="#carouselExampleIndicators" type="button"></button>
+         </div>
+         <div class="carousel-inner">
+             <div class="carousel-item active">
+                 <img alt="..." class="d-block w-100" src="./img/Picture1.png">
+                 <div class="carousel-caption" id="pc1">
+                     <h5 class="animated bounceInRight" style="animation-delay: 1s">Gamified Quizzes for Classroom</h5>
+                     <p class="animated bounceInLeft d-none d-md-block" style="animation-delay: 2s">Helps teachers create gamified quizzes and interactive learning material .</p>
+                 </div>
+             </div>
+             <div class="carousel-item">
+                 <img alt="..." class="d-block w-100" src="./img/Picture2.png">
+                 <div class="carousel-caption" id="pc2">
+                     <h5 class="animated bounceInRight" style="animation-delay: 1s">Challenge Your Friends for Instant Study Groups</h5>
+                     <p class="animated bounceInLeft d-none d-md-block" style="animation-delay: 2s">To create and host quizzes for others, please create a free account at www.DHorntail.com .</p>
+                 </div>
+             </div>
+             <div class="carousel-item">
+                 <img alt="..." class="d-block w-100" src="./img/Picture3.png">
+                 <div class="carousel-caption" id="pc3">
+                     <h5 class="animated bounceInRight" style="animation-delay: 1s">Motivate Students and Reclaim Your Time</h5>
+                     <p class="animated bounceInLeft d-none d-md-block" style="animation-delay: 2s">Used by millions of students, in class and at home .</p>
+                 </div>
+             </div>
+         </div>
+         <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#carouselExampleIndicators" type="button"><span aria-hidden="true" class="carousel-control-prev-icon"></span> <span class="visually-hidden">Previous</span></button> <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#carouselExampleIndicators" type="button"><span aria-hidden="true" class="carousel-control-next-icon"></span> <span class="visually-hidden">Next</span></button>
+        </div>
+
+        <section class="C1">
+            <p class="C1t">Quiz it Now</p>
+            <div class="boxs">
+                <div class="box">
+                    <div class="ic">
+                        <a href="Quiz it Now/Math.html">
+                            <img src="./img/math.png"/>
+                        </a>
+                    </div>
+                    <p>Math</p>
+                </div>
+                <div class="box">
+                    <div class="ic">
+                        <a href="Quiz it Now/English.html">
+                            <img src="./img/eng.png" />
+                        </a>
+                    </div>
+                    <p>English</p>
+                </div>
+                <div class="box">
+                    <div class="ic">
+                        <a href="Quiz it Now/Science.html">
+                            <img src="./img/biology.png" />
+                        </a>
+                    </div>
+                    <p>Science</p>
+                </div>
+                <div class="box">
+                    <div class="ic">
+                        <a href="Quiz it Now/Computers.html">
+                            <img src="./img/hacker.png" />
+                        </a>
+                    </div>
+                    <p>Computers</p>
+                </div>
+                <div class="box">
+                    <div class="ic">
+                        <a href="Quiz it Now/Sports.html">
+                            <img src="./img/sports.png" />
+                        </a>
+                    </div>
+                    <p>Sports</p>
+                </div>
+                <div class="box">
+                    <div class="ic">
+                        <a href="Quiz it Now/Health.html">
+                            <img src="./img/stethoscope.png" />
+                        </a>
+                    </div>
+                    <p>Health</p>
+                </div>
+                <div class="box">
+                    <div class="ic">
+                        <a href="Quiz it Now/Languages.html">
+                            <img src="./img/languages.png" />
+                        </a>
+                    </div>
+                    <p>Languages</p>
+                </div>
+                <div class="box">
+                    <div class="ic">
+                        <a href="Quiz it Now/History.html">
+                            <img src="./img/history.png" />
+                        </a>
+                    </div>
+                    <p>History</p>
+                </div>
+            </div>
+        </section>
+        <section class="C2">
+            <p class="C2t">Templates</p>
+            <div class="Temps">
+                <div class="Temp">
+                    <div class="ic">
+                        <a href="#">
+                            <img src="./img/teacher.png" />
+                        </a>
+                    </div>
+                    <div class="cont">
+                        <p class="contT">Geometry</p>
+                        <p class="contC">Category: Math</p>
+                        <p class="contO">12 Slides</p>
+                    </div>
+                </div>
+                <div class="Temp">
+                    <div class="ic">
+                        <a href="#">
+                            <img src="./img/english.png" />
+                        </a>
+                    </div>
+                    <div class="cont">
+                        <p class="contT">Noun Phrases</p>
+                        <p class="contC">Category: English</p>
+                        <p class="contO">15 Slides</p>
+                    </div>
+                </div>
+                <div class="Temp">
+                    <div class="ic">
+                        <a href="#">
+                            <img src="./img/water.png" />
+                        </a>
+                    </div>
+                    <div class="cont">
+                        <p class="contT">Water</p>
+                        <p class="contC">Category: Science</p>
+                        <p class="contO">10 Slides</p>
+                    </div>
+                </div>
+                <div class="Temp">
+                    <div class="ic">
+                        <a href="#">
+                            <img src="./img/python.png" />
+                        </a>
+                    </div>
+                    <div class="cont">
+                        <p class="contT">Python</p>
+                        <p class="contC">Category: Computers</p>
+                        <p class="contO">12 Slides</p>
+                    </div>
+                </div>
+                <div class="Temp">
+                    <div class="ic">
+                        <a href="#">
+                            <img src="./img/basketball.png" />
+                        </a>
+                    </div>
+                    <div class="cont">
+                        <p class="contT">Basketball</p>
+                        <p class="contC">Category: Sports</p>
+                        <p class="contO">9 Slides</p>
+                    </div>
+                </div>
+                <div class="Temp">
+                    <div class="ic">
+                        <a href="#">
+                            <img src="./img/diet.png" />
+                        </a>
+                    </div>
+                    <div class="cont">
+                        <p class="contT">Nutrition</p>
+                        <p class="contC">Category: Health</p>
+                        <p class="contO">14 Slides</p>
+                    </div>
+                </div>
+                <div class="Temp">
+                    <div class="ic">
+                        <a href="#">
+                            <img src="./img/translation.png" />
+                        </a>
+                    </div>
+                    <div class="cont">
+                        <p class="contT">Clauses</p>
+                        <p class="contC">Category: Languages</p>
+                        <p class="contO">16 Slides</p>
+                    </div>
+                </div>
+                <div class="Temp">
+                    <div class="ic">
+                        <a href="#">
+                            <img src="./img/prophet.png" />
+                        </a>
+                    </div>
+                    <div class="cont">
+                        <p class="contT">Prophet Stories</p>
+                        <p class="contC">Category: History</p>
+                        <p class="contO">14 Slides</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="ABCD">
+            <p>© Copyright 2023 . All Rights Reserved</p>
+            <p>Version Info-1.1.0</p>
+        </footer>
+    </div>
+
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <img src="./img/dragon.png" alt="A DHorntail egg">
+                </span>
+
+                <div class="text logo-text">
+                    <span class="name">DHorntail</span>
+                    <span class="profession">Software Company</span>
+                </div>
+            </div>
+
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+
+                <li class="search-box">
+                    <i class='bx bx-search icon'></i>
+                    <input type="text" placeholder="Search...">
+                </li>
+
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a class="active" href="#">
+                            <i class='bx bxs-window-alt icon'></i>
+                            <span class="text nav-text">Explore</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-server icon'></i>
+                            <span class="text nav-text">My library</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-bell icon'></i>
+                            <span class="text nav-text">Notifications</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-bar-chart-alt-2 icon'></i>
+                            <span class="text nav-text">Analytics</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-cog icon'></i>
+                            <span class="text nav-text">Settings</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bxs-face icon'></i>
+                            <span class="text nav-text">Profile</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="bottom-content">
+                <li class="">
+                    <a href="#">
+                        <i class='bx bx-log-out icon'></i>
+                        <span class="text nav-text">Logout</span>
+                    </a>
+                </li>
+
+                <li class="mode">
+                    <div class="sun-moon">
+                        <i class='bx bx-moon icon moon'></i>
+                        <i class='bx bx-sun icon sun'></i>
+                    </div>
+                    <span class="mode-text text">Dark mode</span>
+
+                    <div class="toggle-switch">
+                        <span class="switch"></span>
+                    </div>
+                </li>
+
+            </div>
+        </div>
+
+    </nav>
+    
+    <script>
+        const body = document.querySelector('body'),
+            sidebar = body.querySelector('nav'),
+            toggle = body.querySelector(".toggle"),
+            searchBtn = body.querySelector(".search-box"),
+            modeSwitch = body.querySelector(".toggle-switch"),
+            modeText = body.querySelector(".mode-text");
+
+        toggle.addEventListener("click", () => {
+            sidebar.classList.toggle("close");
+        })
+
+        searchBtn.addEventListener("click", () => {
+            sidebar.classList.remove("close");
+        })
+
+        modeSwitch.addEventListener("click", () => {
+            body.classList.toggle("dark");
+
+            if (body.classList.contains("dark")) {
+                modeText.innerText = "Light mode";
+            } else {
+                modeText.innerText = "Dark mode";
+
+            }
+        });
+    </script>
+
+    <script>
+        function preview() {
+            frame.src = URL.createObjectURL(event.target.files[0]);
+        }
+        function clearImage() {
+            document.getElementById('formFile').value = null;
+            frame.src = "";
+        }
+    </script>
+
+    <!-- All JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+</body>
+</html>

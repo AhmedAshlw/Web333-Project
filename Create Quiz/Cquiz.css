@@ -1,0 +1,183 @@
+/* Google Font Import - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* ===== Global View ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    /* ===== Colors ===== */
+
+    --sidebar-color: #FFF;
+    --primary-color: #695CFE;
+    --primary-color-light: #F6F5FF;
+    --toggle-color: #DDD;
+    --text-color: #707070;
+    /* ====== Transition ====== */
+    --tran-03: all 0.2s ease;
+    --tran-03: all 0.3s ease;
+    --tran-04: all 0.3s ease;
+    --tran-05: all 0.3s ease;
+}
+
+body {
+    min-height: 100vh;
+    transition: var(--tran-05);
+    background-color: #2F3035;
+    background: rgb(220,220,220);
+    background: linear-gradient(132deg, rgba(220,220,220,1) 0%, rgba(220,220,220,1) 94%);
+}
+
+
+body .A {
+    margin-left: 6.875rem;
+    margin-right: 0.75rem;
+}
+
+body .AB {
+    min-height: 3.75rem;
+    width: 100%;
+    padding: 1.563rem 3.125rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*position:sticky;*/
+    top: 0;
+    z-index: 998;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #9599E2;
+    background-image: linear-gradient(135deg, #9599E2 10%, #8BC6EC 40%, #b7d6ef 66%, #b9ed4c 100%);
+}
+
+.AB .LT {
+    display: flex;
+    align-items: center;
+    margin: 0 24px;
+    font-size: 1.875rem;
+    font-weight: 600;
+    color: #FFF;
+    cursor: pointer;
+}
+
+.AB .L {
+    min-width: 710px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.AB .Login, .AB .Create {
+    background-color: var(--primary-color-light);
+    color: var(--text-color);
+    height: 50px;
+    width: 150px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.25rem;
+    margin-left: 5px;
+    padding-top: 18px;
+    transition: background-color 0.15s, color 0.15s;
+}
+
+.AB .Login:hover, .AB .Create:hover {
+    opacity: 0.7;
+}
+.AB .Login:active, .AB .Create:active {
+    opacity: 0.5;
+}
+
+.AB .Login a, .AB .Create a{
+    list-style: none;
+    text-decoration: none;  
+}
+
+body .ABCD {
+    min-height: 4.75rem;
+    background-color: #00ace6;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-top: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 30px;
+    color: #FFF;
+    background-color: #9599E2;
+    background-image: linear-gradient(135deg, #9599E2 10%, #8BC6EC 40%, #b7d6ef 66%, #b9ed4c 100%);
+}
+
+.box {
+    max-width: 400px;
+    width: 100%;
+}
+
+.box .search-box1 {
+    position: relative;
+    height: 50px;
+    max-width: 50px;
+    margin: auto;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+#check:checked ~ .search-box1 {
+    max-width: 380px;
+}
+
+.search-box1 input {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 25px;
+    background: #fff;
+    outline: none;
+    border: none;
+    padding-left: 1.25rem;
+    font-size: 1.125rem;
+}
+
+.search-box1 .icon {
+    position: absolute;
+    right: -2px;
+    top: 0;
+    width: 50px;
+    background: #FFF;
+    height: 100%;
+    text-align: center;
+    line-height: 3.125rem;
+    color: rgb(51, 153, 255);
+    font-size: 1.25rem;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+#check:checked ~ .search-box1 .icon {
+    background: rgb(51, 153, 255);
+    color: #FFF;
+    width: 60px;
+    border-radius: 0 25px 25px 0;
+}
+
+#check {
+    display: none;
+}
+
+
+
+
+

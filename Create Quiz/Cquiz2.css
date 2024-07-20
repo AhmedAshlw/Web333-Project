@@ -1,0 +1,138 @@
+/* Google Font Import - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* ===== Global View ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    /* ===== Colors ===== */
+    --sidebar-color: #FFF;
+    --primary-color: #695CFE;
+    --primary-color-light: #F6F5FF;
+    --toggle-color: #DDD;
+    --text-color: #707070;
+    /* ====== Transition ====== */
+    --tran-03: all 0.2s ease;
+    --tran-03: all 0.3s ease;
+    --tran-04: all 0.3s ease;
+    --tran-05: all 0.3s ease;
+}
+
+body {
+    min-height: 100vh;
+    transition: var(--tran-05);
+    background: rgb(220,220,220);
+    background: linear-gradient(132deg, rgba(220,220,220,1) 0%, rgba(220,220,220,1) 94%);
+}
+
+.navbar{
+    background: rgb(204,204,213);
+    background: linear-gradient(132deg, rgba(204,204,213,1) 18%, rgba(149,153,226,1) 40%, rgba(139,198,236,1) 58%, rgba(183,214,239,1) 78%, rgba(185,237,76,1) 100%);
+}
+
+.container-fluid{
+    display: flex;
+    align-items: center;
+    margin: 0 24px;
+    font-size: 2rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.navbar-brand{
+    color: #FFF;
+}
+
+body .S1 {
+    min-height: 46.875rem;
+    width: calc(100% - 40%);
+    border-radius: 20px;
+    background-color: #F6F5FF;
+    margin: 2rem auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.S1 p{
+    min-height: 2rem;
+    font-size: 1.75rem;
+    font-weight: 400;
+    padding-top: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.horizontal-line{
+    height: 5px;
+    width: 100%;
+    border-radius: 3px;
+    color: #000000;
+    background-color: #000000;
+}
+
+.S1 .Q{
+    min-height: 17.5rem;
+    width: calc(100% - 10%);
+    margin: 2rem 40px 0px 40px;
+    border-radius: 10px;
+    background-color: #fefefe;
+    box-shadow: 2px 2px 2px #a7a7a8;
+    display: flex;
+    flex-direction: column;
+}
+
+.Q .header{
+    height: 50px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: #efeff2;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header p{
+    height: 100%;
+    width: 20%;
+    font-size: 1.25rem;
+    font-weight: 300;
+    padding: 0px 0px 0px;
+}
+.Q .mainn{
+    flex: 1;
+}
+.Q .footer{
+    height: 50px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #efeff2;
+}
+
+body .S2 {
+    min-height: 46.875rem;
+    background-color:#707070;
+    width: calc(100% - 5%);
+    margin: 2rem auto;
+}
+
+footer{
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 60px 10px 60px;
+    color: #FFF;
+    background: rgb(204,204,213);
+    background: linear-gradient(132deg, rgba(204,204,213,1) 18%, rgba(149,153,226,1) 40%, rgba(139,198,236,1) 58%, rgba(183,214,239,1) 78%, rgba(185,237,76,1) 100%);
+}
+
